@@ -1,0 +1,9 @@
+deployment:
+  replicas: 1
+  imageVersion: :IMAGE_VERSION
+  imageURL: 444152781209.dkr.ecr.us-east-1.amazonaws.com/roboshop/frontend
+hpa:
+  cpuUtilization: 15
+tgb:
+  arn: arn:aws:elasticloadbalancing:us-east-1:444152781209:targetgroup/roboshop-dev/bb813d835b700029
+  
